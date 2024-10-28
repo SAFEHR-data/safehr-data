@@ -21,5 +21,6 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Categories"
         name: "categories"
+        hint: "Legal values include blog, news (comma separated)"
         widget: "list"
         default: ["blog", "news"]

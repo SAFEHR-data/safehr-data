@@ -1,9 +1,20 @@
+# https://mmistakes.github.io/minimal-mistakes/docs/navigation/
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Data cards"
+    url: https://safehr-data.github.io/uclh-research-discovery/
+    target: _blank
+  - title: "Wiki"
+    url: /wiki/
+    target: _blank
+  - title: "News"
+    url: /posts/
+  - title: "Team"
+    url: /team/
+  - title: "Admin"
+    url: /admin/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Tags"
+  #   url: /tags/
