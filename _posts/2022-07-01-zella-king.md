@@ -3,6 +3,7 @@ title: "Machine learning technology helps manage demand for emergency beds acros
 date: 2022-07-01
 categories:
   - news
+author: Steve Harris
 ---
 Congrats to Zella King and Craig Wood.
 

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: SAFEHR-data
+title: SAFEHR data
 email: uclh.criu@nhs.net # TODO: update an safehr email email
 description: >- # this means to ignore newlines until "baseurl:"
   Secure or Anonymised Framework for Electronic Health Records (SAFEHR-data)
@@ -32,7 +32,7 @@ theme: minimal-mistakes-jekyll
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,38 +58,41 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name: "First Lastname"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# Default author unless specified in data/authors.yml
+# commented out to avoid it appearing in the sidebar
+# author:
+# name: "SAFEHR"
+# avatar: "/assets/uploads/avatars/anon.jpg"
+# bio: "SAFEHR data - a UCLH BRC sponsored collaboration."
+# links:
+# - label: "Website"
+#   icon: "fas fa-fw fa-link"
+#   url: "https://"
+# - label: "Twitter"
+#   icon: "fab fa-fw fa-twitter-square"
+#   url: "https://twitter.com/"
+# - label: "GitHub"
+#   icon: "fab fa-fw fa-github"
+#   url: "https://github.com/safehr-data"
+# - label: "Instagram"
+#   icon: "fab fa-fw fa-instagram"
+#   url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/safehr-data"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
+  # ======
   - scope:
       path: "_posts"
       type: posts
@@ -101,6 +104,7 @@ defaults:
       share: true
       related: true
   # _pages
+  # ======
   - scope:
       path: "_pages"
       type: pages
@@ -108,6 +112,7 @@ defaults:
       layout: single
       author_profile: false
   # _team
+  # ======
   - scope:
       path: "_team"
       type: team

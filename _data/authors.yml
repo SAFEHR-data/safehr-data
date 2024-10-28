@@ -1,0 +1,19 @@
+# /_data/authors.yml
+
+Steve Harris:
+  name: "Steve Harris"
+  bio: "Consultant in Critical Care, and Chief Research Information Officer"
+  avatar: "/assets/uploads/avatars/steve-harris.jpeg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:steve.harris@ucl.ac.uk"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://profiles.ucl.ac.uk/2392-steve-harris"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/extravagantman"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/docsteveharris"
