@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Fix issue with nokogiri gem
+ruby "3.2.0"  # Use a newer Ruby version
+
 gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
 
