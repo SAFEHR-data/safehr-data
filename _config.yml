@@ -36,6 +36,7 @@ timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time
 
 include:
   - _pages
+  - _team
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -94,14 +95,14 @@ defaults:
   # _posts
   # ======
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: # true
+      share: false # social media sharing disabled
       related: true
   # _pages
   # ======
