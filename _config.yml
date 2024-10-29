@@ -22,17 +22,21 @@ description: >- # this means to ignore newlines until "baseurl:"
   and clinical practice.
 # twitter_username: username
 # github_username: doc
-minimal_mistakes_skin: air
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
 markdown: kramdown
 theme: minimal-mistakes-jekyll
+
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Removing pagination from home page
+# see https://mmistakes.github.io/minimal-mistakes/docs/layouts/#home-page-layout
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 
 include:
   - _pages
@@ -61,23 +65,14 @@ plugins:
 
 # Default author unless specified in data/authors.yml
 # commented out to avoid it appearing in the sidebar
-# author:
-# name: "SAFEHR"
-# avatar: "/assets/uploads/avatars/anon.jpg"
-# bio: "SAFEHR data - a UCLH BRC sponsored collaboration."
-# links:
-# - label: "Website"
-#   icon: "fas fa-fw fa-link"
-#   url: "https://"
-# - label: "Twitter"
-#   icon: "fab fa-fw fa-twitter-square"
-#   url: "https://twitter.com/"
-# - label: "GitHub"
-#   icon: "fab fa-fw fa-github"
-#   url: "https://github.com/safehr-data"
-# - label: "Instagram"
-#   icon: "fab fa-fw fa-instagram"
-#   url: "https://instagram.com/"
+author:
+  name: "SAFEHR data team"
+  avatar: "/assets/uploads/avatars/safehr-susan.jpg"
+  bio: "SAFEHR data - a UCL/H BRC health data collaboration supporting research and clinical practice"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/safehr-data"
 
 footer:
   links:
@@ -118,9 +113,9 @@ defaults:
       path: "_team"
       type: team
     values:
-      layout: single
+      layout: archive
       author_profile: false
-      share: true
+      share: false
 
 category_archive:
   type: liquid
