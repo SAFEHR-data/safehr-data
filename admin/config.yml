@@ -96,7 +96,7 @@ collections:
             widget: markdown
             label: "Text content"
       - label: "Wiki"
-        name: "about"
+        name: "wiki"
         file: "_pages/wiki.md"
         fields:
           - name: body
