@@ -23,7 +23,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 # twitter_username: username
 # github_username: doc
 minimal_mistakes_skin: safehr
+
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-search
 search: true
+lunr:
+  search_within_pages: true
+  search_full_content: true
 
 # Build settings
 markdown: kramdown
