@@ -15,9 +15,44 @@ collections:
   - name: "Pages"
     label: "Pages"
     files:
+      - label: "Start"
+        name: "Start"
+        file: "_pages/start.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Collaborate"
+        name: "Collaborate"
+        file: "_pages/collaborate.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "DAPE"
+        name: "Data Access Process for Education"
+        file: "_pages/dape.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "DAPR"
+        name: "Data Access Process for Research"
+        file: "_pages/dapr.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
       - label: "About"
         name: "about"
         file: "_pages/about.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Wiki"
+        name: "about"
+        file: "_pages/wiki.md"
         fields:
           - name: body
             widget: markdown
@@ -64,12 +99,12 @@ collections:
         widget: object
         collapsed: true
         # FIXME: format of the frontmatter does not work
-        fields:
-          - name: title
-            widget: string
-          - name: image
-            widget: image
-            default: "/assets/images/anon.jpg"
+        # fields:
+        #   - name: title
+        #     widget: string
+        #   - name: image
+        #     widget: image
+        #     default: "/assets/images/anon.jpg"
       - name: body
         label: "Brief biography"
         widget: markdown
