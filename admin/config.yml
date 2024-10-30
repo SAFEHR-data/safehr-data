@@ -74,6 +74,13 @@ collections:
           - name: body
             widget: markdown
             label: "Text content"
+      - label: "Explore our data"
+        name: "explore"
+        file: "_pages/explore.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
       - label: "DAP-Education"
         name: "Data Access Process for Education"
         file: "_pages/dap-education.md"
