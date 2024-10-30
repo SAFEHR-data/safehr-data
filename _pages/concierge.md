@@ -1,6 +1,6 @@
 ---
-permalink: /pages/start/
-title: "start"
+permalink: /pages/concierge/
+title: "concierge"
 ---
 
 Explain the data access choices here ...

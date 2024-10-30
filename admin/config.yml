@@ -12,51 +12,6 @@ media_folder: "assets/uploads"
 publish_mode: editorial_workflow
 
 collections:
-  - name: "Pages"
-    label: "Pages"
-    files:
-      - label: "Start"
-        name: "Start"
-        file: "_pages/start.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
-      - label: "Collaborate"
-        name: "Collaborate"
-        file: "_pages/collaborate.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
-      - label: "DAPE"
-        name: "Data Access Process for Education"
-        file: "_pages/dape.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
-      - label: "DAPR"
-        name: "Data Access Process for Research"
-        file: "_pages/dapr.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
-      - label: "About"
-        name: "about"
-        file: "_pages/about.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
-      - label: "Wiki"
-        name: "about"
-        file: "_pages/wiki.md"
-        fields:
-          - name: body
-            widget: markdown
-            label: "Text content"
   - name: "news" # Used in routes, e.g., /admin/collections/blog
     label: "News" # Used in the UI
     description: "News and other public posts"
@@ -102,3 +57,48 @@ collections:
         label: "Preferred contact email"
         widget: string
         pattern: [".{1,}@.{1,}\\..{2,}", "Invalid email format"]
+  - name: "Pages"
+    label: "Pages"
+    files:
+      - label: "Start"
+        name: "Start"
+        file: "_pages/concierge.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Collaborate"
+        name: "Collaborate"
+        file: "_pages/collaborate.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "DAP-Education"
+        name: "Data Access Process for Education"
+        file: "_pages/dap-education.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "DAP-Research"
+        name: "Data Access Process for Research"
+        file: "_pages/dap-research.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "About"
+        name: "about"
+        file: "_pages/about.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Wiki"
+        name: "about"
+        file: "_pages/wiki.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
