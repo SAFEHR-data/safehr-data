@@ -32,7 +32,7 @@ collections:
         default: ["blog", "news"]
   - name: "team"
     identifier_field: "display_name"
-    label: "Team"
+    label: "New Team Member"
     folder: "_team/"
     create: true
     extension: "md"
@@ -58,7 +58,7 @@ collections:
             widget: string
           - name: image
             widget: image
-            default: "assets/uploads/avatars/anon.jpg"
+            default: "/assets/images/anon.jpg"
       - name: body
         label: "Brief biography"
         widget: markdown

@@ -72,7 +72,7 @@ plugins:
 # commented out to avoid it appearing in the sidebar
 author:
   name: "SAFEHR data team"
-  avatar: "/assets/uploads/avatars/safehr-susan.jpg"
+  avatar: "/assets/images/safehr-susan.jpg"
   bio: "SAFEHR data - a UCL/H BRC health data collaboration supporting research and clinical practice"
   links:
     - label: "GitHub"
