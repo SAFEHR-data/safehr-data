@@ -12,6 +12,16 @@ media_folder: "assets/uploads"
 publish_mode: editorial_workflow
 
 collections:
+  - name: "Pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "_pages/about.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
   - name: "news" # Used in routes, e.g., /admin/collections/blog
     label: "News" # Used in the UI
     description: "News and other public posts"
@@ -53,6 +63,7 @@ collections:
       - name: "sidebar"
         widget: object
         collapsed: true
+        # FIXME: format of the frontmatter does not work
         fields:
           - name: title
             widget: string
