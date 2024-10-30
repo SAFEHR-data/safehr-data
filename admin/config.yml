@@ -32,7 +32,7 @@ collections:
         default: ["blog", "news"]
   - name: "team"
     identifier_field: "display_name"
-    label: "New Team Member"
+    label: "Team Member" # will appear as "New Team Member" in the UI"
     folder: "_team/"
     create: true
     extension: "md"
