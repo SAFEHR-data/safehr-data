@@ -13,7 +13,3 @@ main:
     url: /team/
   - title: "Admin"
     url: /admin/
-  # - title: "Categories"
-  #   url: /categories/
-  # - title: "Tags"
-  #   url: /tags/

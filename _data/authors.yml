@@ -3,7 +3,7 @@
 Steve Harris:
   name: "Steve Harris"
   bio: "Consultant in Critical Care, and Chief Research Information Officer"
-  avatar: "/assets/uploads/avatars/steve-harris.jpg"
+  avatar: "/assets/uploads/steve-harris.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
