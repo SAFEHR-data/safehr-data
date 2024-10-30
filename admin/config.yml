@@ -44,7 +44,7 @@ collections:
         required: true
         hint: "Your name as you wish it to appear on the team page"
         widget: "string"
-        pattern: [".{5}", "Some text is required"]
+        pattern: [".{5,}", "Some text is required"]
       - name: "excerpt"
         label: "One sentence bio"
         required: true
@@ -58,4 +58,11 @@ collections:
             widget: string
           - name: image
             widget: image
-            default: "uploads/avatars/anon.jpg"
+            default: "assets/uploads/avatars/anon.jpg"
+      - name: body
+        label: "Brief biography"
+        widget: markdown
+      - name: email
+        label: "Preferred contact email"
+        widget: string
+        pattern: [".{1,}@.{1,}\\..{2,}", "Invalid email format"]
