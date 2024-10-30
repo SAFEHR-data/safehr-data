@@ -4,23 +4,58 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  squash_merges: true # when using editorial workflow
 media_folder: "assets/uploads"
 
+# https://decapcms.org/docs/editorial-workflows/
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "news" # Used in routes, e.g., /admin/collections/blog
+    label: "News" # Used in the UI
+    description: "News and other public posts"
     folder: "_posts/" # The path to the folder where the documents are stored
+    extension: "md"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "single" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Categories"
         name: "categories"
         hint: "Legal values include blog, news (comma separated)"
         widget: "list"
         default: ["blog", "news"]
+  - name: "team"
+    identifier_field: "display_name"
+    label: "Team"
+    folder: "_team/"
+    create: true
+    extension: "md"
+    slug: "{{slug}}" # file name will be 'name'
+    preview_path: "team/{{slug}}"
+    fields:
+      - name: "display_name"
+        label: "Display Name"
+        required: true
+        hint: "Your name as you wish it to appear on the team page"
+        widget: "string"
+        pattern: [".{5}", "Some text is required"]
+      - name: "excerpt"
+        label: "One sentence bio"
+        required: true
+        hint: "A short description of your role or position"
+        pattern: [".{20,80}", "Between 20 and 80 characters"]
+      - name: "sidebar"
+        widget: object
+        collapsed: true
+        fields:
+          - name: title
+            widget: string
+          - name: image
+            widget: image
+            default: "uploads/avatars/anon.jpg"

@@ -81,21 +81,15 @@ author:
 
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/safehr-data"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
   # ======
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
