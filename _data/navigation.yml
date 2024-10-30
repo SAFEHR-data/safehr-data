@@ -13,3 +13,4 @@ main:
     url: /team/
   - title: "Admin"
     url: /admin/
+    target: "_blank"
