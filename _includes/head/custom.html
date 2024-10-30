@@ -1,0 +1,21 @@
+<!-- start custom head snippets -->
+
+<!-- TODO: switch to Admin-only registration for perforamance-->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Enable mermaid diagrams by adding mermaid: true to the front matter  -->
+{% if page.mermaid %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+        });
+    });
+</script>
+{% endif %}
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->

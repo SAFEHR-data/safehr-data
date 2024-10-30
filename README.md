@@ -1,27 +1,43 @@
-# Minimal Mistakes remote theme starter
+# SAFEHR starter
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+A simple website to direct users to the SAFEHR resources.
 
-Contains basic configuration to get you a site with:
+## Getting started
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+If you're a developer then you can fork this repo, edit, and submit a pull request.
+If you're not a developer then you can edit much of the site in a visual editor.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## How it works
 
----
+This is a Jekyll powered static blog. We chose Jeklyl so we can integrate with the data cards [site](https://safehr-data.github.io/uclh-research-discovery/) at some point. We're using the [Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/) for the visual design. The site is hosted on Netlify, and we're using [DecapCMS](https://decapcms.org/) to manage the content.
 
-## Troubleshooting
+## Tips
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+### Creating diagrams
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
+Design your diagrams using the [mermaid live editor](https://mermaid.live/). You can then copy and paste the code into the markdown file. Set the front matter of your page to include the following:
+
+```yaml
+mermaid: true
+```
+
+And then insert your diagram code as raw html into the markdown file. For example:
+
+```html
+<div class="mermaid">
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Debug]
+    D --> B
+</div>
+```
+
+## Useful links
+
+- [Documentation for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/)
+- [Create a diagram with using the mermaid live editor](https://mermaid.live/)
 - [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+- [Jekyll documentation](https://jekyllrb.com/docs/home/)
+- [Netlify documentation](https://docs.netlify.com/)
+- [Decapation CMS documentation](https://decapcms.org/docs/)
