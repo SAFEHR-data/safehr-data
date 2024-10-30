@@ -95,16 +95,6 @@ collections:
         required: true
         hint: "A short description of your role or position"
         pattern: [".{20,80}", "Between 20 and 80 characters"]
-      - name: "sidebar"
-        widget: object
-        collapsed: true
-        # FIXME: format of the frontmatter does not work
-        # fields:
-        #   - name: title
-        #     widget: string
-        #   - name: image
-        #     widget: image
-        #     default: "/assets/images/anon.jpg"
       - name: body
         label: "Brief biography"
         widget: markdown
