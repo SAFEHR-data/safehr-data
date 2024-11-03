@@ -7,10 +7,6 @@ main:
     target: _blank
   - title: "Wiki"
     url: /wiki/
-  - title: "News"
-    url: /posts/
-  - title: "Team"
-    url: /team/
   - title: "Admin"
     url: /admin/
     target: "_blank"
