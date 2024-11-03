@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+
+  {% if site.paginate %}
+    {% assign projects = paginator.projects %}
+  {% else %}
+    {% assign projects = site.projects %}
+  {% endif %}
+
+
+  {%- if projects.size > 0 -%}
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    {%- for project in projects -%}
+      {% include project_card.html %}
+    {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+</div>

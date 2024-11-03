@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }} <span class="badge rounded-pill {{page.status}}">{{page.status}}</span></h1>
+    <p class="post-meta">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~ 
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
+        </time>
+      {%- endif -%}
+      {%- if page.authors -%}
+        • {% for author in page.authors %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}</p>
+  </header>
+
+
+  <div class="container" itemprop="articleBody">
+
+    {% if page.tabs or page.rdr_embed_url %}
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button 
+          class="nav-link active" 
+          id="overview-tab" 
+          data-bs-toggle="tab" 
+          data-bs-target="#overview" 
+          type="button" 
+          role="tab" 
+          aria-controls="overview" 
+          aria-selected="true">Overview</button>
+      </li>
+      {% for tab in page.tabs %}
+      <li class="nav-item" role="presentation">
+        <button 
+          class="nav-link" 
+          id="{{tab.name}}-tab" 
+          data-bs-toggle="tab" 
+          data-bs-target="#{{tab.name}}" 
+          type="button" 
+          role="tab" 
+          aria-controls="{{tab.name}}" 
+          aria-selected="true">{%- if tab.label-%}{{tab.label}}{%-else-%}{{tab.name | capitalize}}{%-endif-%}</button>
+      </li>
+      {% endfor %}
+      {% if page.rdr_embed_url %}
+      <li class="nav-item" role="presentation">
+        <button 
+          class="nav-link" 
+          id="data-tab" 
+          data-bs-toggle="tab" 
+          data-bs-target="#data" 
+          type="button" 
+          role="tab" 
+          aria-controls="data" 
+          aria-selected="true">Data</button>
+      </li>
+      {% endif %}
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+        {{ content }}
+      </div>
+      {% for tab in page.tabs %}
+      <div class="tab-pane fade show" id="{{tab.name}}" role="tabpanel" aria-labelledby="{{tab.name}}-tab">
+        {%- if tab.type == "embed" -%}
+            <iframe src="{{tab.source}}" width="568" height="351" allowfullscreen frameborder="0"></iframe>
+        {%- else -%}
+          {%- capture tab_content -%}{%- include_relative {{tab.source}} -%}{%- endcapture -%}
+          {%- if tab.type == "html" -%}
+            {{tab_content | remove: '<!DOCTYPE html>'}}
+          {%- else -%}
+            {{tab_content| markdownify}}
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      {% endfor %}
+      {% if page.rdr_embed_url %}
+      <div class="tab-pane fade show" id="data" role="tabpanel" aria-labelledby="data-tab">
+        <iframe src="{{page.rdr_embed_url}}" width="568" height="351" allowfullscreen frameborder="0"></iframe>
+      </div>
+      {% endif %}
+    </div>
+    {%- else -%}
+      {{content}}
+    {%- endif -%}
+  </div>
+</article>

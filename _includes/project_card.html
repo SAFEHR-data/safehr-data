@@ -1,0 +1,33 @@
+<div class="col">
+	<div class="card mb-3 project-card" style="height: 18rem">
+		<div class="card-header">
+			<div class="d-flex justify-content-between">
+        <h5>{{project.title}}</h5>
+				<div><span class="badge rounded-pill {{project.status}}">{{project.status}}</span></div>
+			</div>
+
+			<small class="text-muted authors">
+				{%- if project.authors -%}
+				  {% capture authors %}
+				    {%- for author in project.authors -%}
+					  {{ author }}
+				    {%- if forloop.last == false -%},{%- endif -%} 
+					{%- endfor -%} 
+				  {% endcapture %}
+				  {{authors | replace: ",", ", " | truncate:40}}<span class="tooltiptext">{{authors | replace: ",", ", "}}</span>
+				{%- endif -%}
+			</small>
+		</div>
+
+		{% if project.img %}
+		<img src="{{project.img.url}}" class="card-img-top" alt="{{project.img.alt}}" />
+    {% endif %}
+
+		<div class="card-body">
+			<p class="card-text">{{project.excerpt | remove: "<p>" | remove: "</p>" | truncate: 160}}</p>
+		</div>
+		<div class="card-footer">
+			<a href="{{project.url | relative_url }}" class="btn btn-outline-primary">Details</a>
+		</div>
+	</div>
+</div>

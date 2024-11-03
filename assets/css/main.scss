@@ -11,5 +11,76 @@ https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
 Here we have created a new theme  ./_sass/skins/_safehr.scss
 */
 
+#data iframe {
+    margin: 1rem;
+    background-color: gray;
+}
+
+.project-card {
+    .card-header {
+        background-color: var(--secondary);
+    }
+
+    .card-footer {
+        background-color: var(--secondary);
+    }
+
+    .btn-outline-primary {
+        color: var(--accent-colour);
+        border-color: var(--accent-colour);
+        background-color: var(--secondary);
+
+        &:hover {
+            color: #fff;
+            border-color: var(--secondary);
+            background-color: var(--accent-colour);
+        }
+    }
+
+    .badge {
+        font-size: 0.75em;
+    }
+}
+
+.badge {
+    font-size: 0.5em;
+
+    &.ongoing {
+        background-color: var(--accent-colour);
+    }
+
+    &.completed {
+        background-color: var(--primary);
+    }
+}
+
+.authors {
+    .tooltiptext {
+        visibility: hidden;
+        width: 300px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        top: 35px;
+        left: 70px;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

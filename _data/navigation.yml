@@ -3,9 +3,8 @@ main:
   - title: "About"
     url: /about/
   - title: "Data cards"
-    url: https://safehr-data.github.io/uclh-research-discovery/
-    target: _blank
-  - title: "Wiki"
+    url: /projects/
+  - title: "Documentation"
     url: /wiki/
   - title: "Admin"
     url: /admin/
