@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Data cards"
-    url: /projects/
+    url: /data-cards/
   - title: "Documentation"
     url: /wiki/
   - title: "Admin"

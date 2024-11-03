@@ -1,8 +1,8 @@
 ---
-title: Team
+title: Data Cards
 layout: collection
-permalink: /team/
-collection: team
+permalink: /data-cards/
+collection: data-cards
 entries_layout: grid
 classes: wide
 ---
