@@ -43,3 +43,4 @@ graph TD
 - [Jekyll documentation](https://jekyllrb.com/docs/home/)
 - [Netlify documentation](https://docs.netlify.com/)
 - [Decapation CMS documentation](https://decapcms.org/docs/)
+- [Jekyll Cheatsheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/)
