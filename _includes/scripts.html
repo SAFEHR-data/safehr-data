@@ -1,0 +1,100 @@
+{% if site.footer_scripts %} {% for script in site.footer_scripts %}
+<script src="{{ script | relative_url }}"></script>
+{% endfor %} {% else %}
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% endif %} {% if site.search == true or page.layout == "search" %} {%- assign
+search_provider = site.search_provider | default: "lunr" -%} {%- case
+search_provider -%} {%- when "lunr" -%} {% include_cached
+search/lunr-search-scripts.html %} {%- when "google" -%} {% include_cached
+search/google-search-scripts.html %} {%- when "algolia" -%} {% include_cached
+search/algolia-search-scripts.html %} {%- endcase -%} {% endif %} {% include
+analytics.html %} {% include /comments-providers/scripts.html %} {% if
+site.after_footer_scripts %} {% for script in site.after_footer_scripts %}
+<script src="{{ script | relative_url }}"></script>
+{% endfor %} {% endif %}
+
+<!-- Enable mermaid diagrams by adding mermaid: true to the front matter  -->
+{% if page.mermaid %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+        });
+    });
+</script>
+{% endif %}
+
+<!-- Accordions Javascript -->
+{% if page.accordion %}
+<!-- In _includes/head/custom.html -->
+<script>
+    (function () {
+        if (!document.querySelector(".accordion-header")) return;
+
+        function closeAllAccordions() {
+            document
+                .querySelectorAll(".accordion-header, .accordion-content")
+                .forEach((el) => {
+                    el.classList.remove("active");
+                });
+        }
+
+        function scrollToHeader(header) {
+            // Get any sticky/fixed header height
+            const siteHeader = document.querySelector(".masthead");
+            const headerOffset = siteHeader ? siteHeader.offsetHeight : 0;
+
+            // Calculate position, accounting for fixed header
+            const headerPosition = header.getBoundingClientRect().top;
+            const offsetPosition =
+                headerPosition + window.pageYOffset - headerOffset - 20; // 20px padding
+
+            // Smooth scroll to the header
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
+        }
+
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const isOpen = header.classList.contains("active");
+
+            if (!header.classList.contains("always-open")) {
+                closeAllAccordions();
+            }
+
+            if (!isOpen) {
+                header.classList.add("active");
+                content.classList.add("active");
+
+                // Wait for DOM update and CSS transition
+                setTimeout(() => {
+                    scrollToHeader(header);
+                }, 10);
+            }
+        }
+
+        // Event delegation for better performance
+        document.addEventListener("click", (event) => {
+            const header = event.target.closest(".accordion-header");
+            if (header) {
+                event.preventDefault();
+                toggleAccordion(header);
+            }
+        });
+
+        // Handle initial state if needed
+        document.addEventListener("DOMContentLoaded", () => {
+            const defaultSection = document.querySelector(
+                ".accordion-header.active",
+            );
+            if (defaultSection) {
+                scrollToHeader(defaultSection);
+            }
+        });
+    })();
+</script>
+{% endif %}

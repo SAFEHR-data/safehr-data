@@ -1,0 +1,116 @@
+// Variables
+$accordion-max-width: 48rem;
+$accordion-border-color: #ddd;
+$accordion-bg-color: #fff;
+$accordion-header-bg: #f4f4f4;
+$accordion-header-hover: #e4e4e4;
+$accordion-padding: 1rem;
+$transition-speed: 0.3s;
+$border-radius: 4px;
+
+// Mixins
+@mixin accordion-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@mixin accordion-transition {
+    transition: all $transition-speed ease-in-out;
+}
+
+// Accordion Header Styles
+.accordion-header {
+    position: relative;
+    cursor: pointer;
+    padding: $accordion-padding;
+    background: $accordion-header-bg;
+    margin: 0;
+    @include accordion-transition;
+
+    // Add a plus/minus icon
+    &::after {
+        content: "+";
+        position: absolute;
+        right: $accordion-padding;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        background: $accordion-header-hover;
+    }
+
+    // When the content is visible
+    &.active {
+        background: $accordion-header-hover;
+
+        &::after {
+            content: "−";
+        }
+    }
+
+    // Remove default heading margins when used on h2, h3, etc.
+    &[class*="h"] {
+        margin: 0;
+    }
+}
+
+// Accordion Content Styles
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    background: $accordion-bg-color;
+    font-size: $type-size-6;
+    @include accordion-transition;
+
+    &.active {
+        height: auto; // Adjust based on your content
+        padding: $accordion-padding;
+        border-top: 1px solid $accordion-border-color;
+    }
+
+    // Style markdown content within
+    p:first-child {
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    // Style includes within accordion
+    > * {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Optional: Wrapper styles if you want to group accordions
+.accordion-group {
+    max-width: $accordion-max-width;
+    margin: 2rem 0;
+    border: 1px solid $accordion-border-color;
+    border-radius: $border-radius;
+    @include accordion-shadow;
+
+    .accordion-header {
+        &:first-child {
+            border-radius: $border-radius $border-radius 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0 $border-radius $border-radius;
+        }
+    }
+
+    // Add dividers between sections
+    .accordion-content:not(:last-child) {
+        border-bottom: 1px solid $accordion-border-color;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

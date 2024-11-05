@@ -34,14 +34,18 @@ lunr:
 markdown: kramdown
 theme: minimal-mistakes-jekyll
 
+sass:
+  style: compressed # For production
+  sass_dir: _sass # If using partials
+
 # Outputting
 permalink: /:categories/:title/
 timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Removing pagination from home page
 # see https://mmistakes.github.io/minimal-mistakes/docs/layouts/#home-page-layout
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 include:
   - _pages
