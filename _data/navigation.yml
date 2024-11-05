@@ -2,10 +2,12 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Data cards"
+  - title: "Data"
     url: /data-cards/
-  - title: "Documentation"
-    url: /wiki/
+  - title: "Docs"
+    url: /docs/
+  - title: "News"
+    url: /posts/
   - title: "Admin"
     url: /admin/
     target: "_blank"
