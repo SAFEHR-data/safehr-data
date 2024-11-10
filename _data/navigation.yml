@@ -5,9 +5,35 @@ main:
   - title: "Data"
     url: /data-cards/
   - title: "Docs"
-    url: /docs/
+    url: /docs/home
   - title: "News"
     url: /posts/
   - title: "Admin"
     url: /admin/
     target: "_blank"
+
+docs:
+  - title: Collaborate
+    children:
+      - title: "Getting started"
+        url: docs/start
+  - title: Data Access
+    children:
+      - title: "Research"
+        url: docs/dap-research
+      - title: "Education"
+        url: docs/dap-education
+  - title: Tools
+    children:
+      - title: "OMOP-ES"
+        url: docs/omop-es
+      - title: "PIXL"
+        url: docs/pixl
+      - title: "Cogstack"
+        url: docs/cogstack
+      - title: "EMAP"
+        url: docs/emap
+  - title: Policies
+    children:
+      - title: "Anonymisation"
+        url: docs/anonymisation
