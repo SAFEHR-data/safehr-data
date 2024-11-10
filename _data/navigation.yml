@@ -12,6 +12,7 @@ main:
     url: /admin/
     target: "_blank"
 
+# Navigation for the docs
 docs:
   - title: Collaborate
     children:
@@ -35,5 +36,5 @@ docs:
         url: docs/emap
   - title: Policies
     children:
-      - title: "Anonymisation"
-        url: docs/anonymisation
+      - title: "Synthetic Data"
+        url: docs/synthetic

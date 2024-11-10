@@ -1,10 +1,10 @@
 ---
 permalink: /docs/home
-title: "docs"
+title: "Documentation"
 ---
 
-This is our knowledge management system. Think of it like a wiki, or intranet for digital researchers and innovators at UCLH and UCL. Please visit our [wiki](https://uclh.slab.com/public/topics/safehr-ljd88xi3) for more information. There are a mixture of public and restricted pages. Reach out if you need access.
+You can find guidance on data access for research and education using the navigator on the left.
 
-Try these posts to get started
+We manage most of our other documenation using a web tool called Slab. Think of it like a wiki, or intranet for digital researchers and innovators at UCLH and UCL. Some pages are already [public](https://uclh.slab.com/public/topics/safehr-ljd88xi3), but others are restricted to UCLH or UCL staff. Reach out if you need access, we'd be happy to invite you to try it out.
 
-- [Our monthly meeting schedule](https://uclh.slab.com/posts/safehr-monthly-meeting-schedule-u7gt7xg8?shr=xA9l4XMdE1kDdHX4RnfUm8oM)
+Other key components of our infrastructure have their documentation stored alongside the code, and you'll find the links to these either in the repository `readme.md` file, or from the pages in the navigation menu.

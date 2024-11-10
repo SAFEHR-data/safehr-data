@@ -83,14 +83,14 @@ collections:
             label: "Text content"
       - label: "DAP-Education"
         name: "Data Access Process for Education"
-        file: "_pages/dap-education.md"
+        file: "_pages/docs/dap-education.md"
         fields:
           - name: body
             widget: markdown
             label: "Text content"
       - label: "DAP-Research"
         name: "Data Access Process for Research"
-        file: "_pages/dap-research.md"
+        file: "_pages/docs/dap-research.md"
         fields:
           - name: body
             widget: markdown
@@ -102,9 +102,9 @@ collections:
           - name: body
             widget: markdown
             label: "Text content"
-      - label: "Wiki"
-        name: "wiki"
-        file: "_pages/wiki.md"
+      - label: "Start"
+        name: "start"
+        file: "_pages/start.md"
         fields:
           - name: body
             widget: markdown
