@@ -27,8 +27,8 @@ minimal_mistakes_skin: safehr
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-search
 search: true
 lunr:
-  search_within_pages: true
-  search_full_content: true
+  search_within_pages: true # all pages, not just collections
+  search_full_content: false # more than first 50 words
 
 # Build settings
 markdown: kramdown
@@ -88,6 +88,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/safehr-data"
+    - label: "Slack"
+      icon: "fab fa-fw fa-slack"
+      url: "https://join.slack.com/t/safehr-data/shared_invite/zt-2u0fbklhz-pcg4wGR~s1aXWbLEsqjUKg"
 
 defaults:
   # _posts

@@ -15,3 +15,8 @@ We don't know how you found us but we hope the following simple steps will get y
 
 - Request access to our [wiki](https://uclh.slab.com/public/topics/safehr-ljd88xi3)
 - Browse the code on [GitHub](https://github.com/safehr-data)
+
+## Request data access
+
+- Data Access Process for Education: [DAP-E](dap-education)
+- Data Access Process for Research: [DAP-R](dap-research)

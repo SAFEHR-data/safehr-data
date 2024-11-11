@@ -34,7 +34,11 @@ docs:
         url: docs/cogstack
       - title: "EMAP"
         url: docs/emap
+      - title: "FlowEHR"
+        url: docs/flowehr
   - title: Policies
     children:
       - title: "Synthetic Data"
         url: docs/synthetic
+      - title: "Anonymisation"
+        url: docs/anonymisation
