@@ -57,6 +57,9 @@ collections:
         label: "Preferred contact email"
         widget: string
         pattern: [".{1,}@.{1,}\\..{2,}", "Invalid email format"]
+  # Pages need to be added one by one
+  # This is not a 'collection'
+  # Perhaps you should do that for an FAQ section?
   - name: "Pages"
     label: "Pages"
     files:
@@ -104,7 +107,49 @@ collections:
             label: "Text content"
       - label: "Start"
         name: "start"
-        file: "_pages/start.md"
+        file: "_pages/docs/start.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Cogstack"
+        name: "cogstack"
+        file: "_pages/docs/cogstack.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "EMAP"
+        name: "emap"
+        file: "_pages/docs/emap.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "OMOP-ES"
+        name: "omop-es"
+        file: "_pages/docs/omop-es.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "PIXL"
+        name: "pixl"
+        file: "_pages/docs/pixl.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Synthetic Data"
+        name: "synthetic"
+        file: "_pages/docs/synthetic.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "FlowEHR"
+        name: "flowehr"
+        file: "_pages/docs/flowehr.md"
         fields:
           - name: body
             widget: markdown

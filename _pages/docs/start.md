@@ -7,7 +7,7 @@ We don't know how you found us but we hope the following simple steps will get y
 
 ## Reach out
 
-- Join our [Slack](https://join.slack.com/t/safehr-data/shared_invite/zt-2u0fbklhz-pcg4wGR~s1aXWbLEsqjUKg)
+- Join our [Slack](https://join.slack.com/t/safehr-community/shared_invite/zt-2u0fbklhz-pcg4wGR~s1aXWbLEsqjUKg)
 - Email us at [uclh.criu@nhs.net](mailto:uclh.criu@nhs.net)
 - Come and say hello at UCL's Institute of Health Informatics (IHI) at 222 Euston Road
 

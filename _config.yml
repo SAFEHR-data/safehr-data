@@ -90,7 +90,7 @@ footer:
       url: "https://github.com/safehr-data"
     - label: "Slack"
       icon: "fab fa-fw fa-slack"
-      url: "https://join.slack.com/t/safehr-data/shared_invite/zt-2u0fbklhz-pcg4wGR~s1aXWbLEsqjUKg"
+      url: "https://join.slack.com/t/safehr-community/shared_invite/zt-2u0fbklhz-pcg4wGR~s1aXWbLEsqjUKg"
 
 defaults:
   # _posts
