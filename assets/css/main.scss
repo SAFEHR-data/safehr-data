@@ -11,5 +11,6 @@ https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
 Here we have created a new theme  ./_sass/skins/_safehr.scss
 */
 
+@import "minimal-mistakes/_under_construction";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

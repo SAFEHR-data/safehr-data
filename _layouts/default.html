@@ -13,6 +13,10 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
+    {% if page.under_construction %}
+      {% include under_construction.html %}
+    {% endif %}
+
     <div class="initial-content">
       {{ content }}
       {% include after-content.html %}
