@@ -24,3 +24,9 @@ layout: archive
 <div class="accordion-content" markdown="1">
 {% include_relative data-cxr.md %}
 </div>
+
+{: .accordion-header}
+## Team
+<div class="accordion-content" markdown="1">
+{% include_relative team.md %}
+</div>
