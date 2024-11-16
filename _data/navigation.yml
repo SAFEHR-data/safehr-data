@@ -8,9 +8,11 @@ main:
     url: /docs/home
   - title: "News"
     url: /posts/
-  - title: "Admin"
-    url: /admin/
-    target: "_blank"
+  - title: "Community"
+    url: /community/
+    # - title: "Admin"
+  #   url: /admin/
+  #   target: "_blank"
 
 # Navigation for the docs
 docs:

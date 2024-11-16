@@ -14,7 +14,7 @@ We don't know how you found us but we hope the following simple steps will get y
 ## Explore the documentation
 
 - Request access to our [wiki](https://uclh.slab.com/public/topics/safehr-ljd88xi3)
-- Browse the code on [GitHub](https://github.com/safehr-data)
+- Browse the code on [GitHub](https://github.com/safehr-data). Reach out with your GitHub username if you'd like to become a collaborator.
 
 ## Request data access
 
