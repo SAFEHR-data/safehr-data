@@ -6,7 +6,7 @@ categories:
 author: Steve Harris
 ---
 
-UCLH and the SAFEHR team have been invited to join the SPHERE-PPL Annual General Meeting. This full-day event will bring together experts in a range of fields from industry, academia, and government to discuss cutting-edge research and explore collaborative opportunities within health.
+UCLH and the SAFehr team have been invited to join the SPHERE-PPL Annual General Meeting. This full-day event will bring together experts in a range of fields from industry, academia, and government to discuss cutting-edge research and explore collaborative opportunities within health.
 
 Meeting participants will:
 

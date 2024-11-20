@@ -7,7 +7,9 @@ toc: true
 toc_sticky: true
 ---
 
-**SAF**EHR (pronounced simply as *safer*) is our Secure/Anonymised Framework for Electronic Health Record data at UCLH. We're a partnership between [UCL](https://www.ucl.ac.uk) and [UCLH](https://www.uclh.nhs.uk) supported and funded by the [UCLH Biomedical Research Centre](https://www.uclhospitals.brc.nihr.ac.uk).
+**SAF**ehr (pronounced simply as *safer*) is built on the principles of safety, anonymisation, and fairness.
+
+We support health researchers at UCL and UCLH who wish to work with data from the Trust's Electronic Health Records (EHRs) including imaging, free text and other multi-modal data. We're a partnership between [UCL](https://www.ucl.ac.uk) and [UCLH](https://www.uclh.nhs.uk) supported and funded by the [UCLH Biomedical Research Centre](https://www.uclhospitals.brc.nihr.ac.uk).
 
 If you're interested in learning more, then please drop by the Institute of Health Informatics (IHI) at 222 Euston Road, or drop us an [email](mailto:uclh.criu@nhs.net).
 
