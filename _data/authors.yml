@@ -1,5 +1,16 @@
 # /_data/authors.yml
 
+Arman Eshaghi:
+  name: "Arman Eshaghi"
+  bio: "Principal Research Fellow, UCL & Lead MS-PINPOINT"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:a.eshaghi@ucl.ac.uk"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://profiles.ucl.ac.uk/67581-arman-eshaghi"
+
 Liam Barrett:
   name: "Liam Barrett"
   bio: "Research fellow with the EvidENT team at the Ear Institute, UCL"
