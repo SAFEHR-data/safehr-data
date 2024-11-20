@@ -30,14 +30,14 @@ collections:
         hint: "Legal values include blog, news (comma separated)"
         widget: "list"
         default: ["blog", "news"]
-  - name: "team"
+  - name: "community"
     identifier_field: "display_name"
-    label: "Team Member" # will appear as "New Team Member" in the UI"
-    folder: "_team/"
+    label: "Community Member" # will appear as "New Team Member" in the UI"
+    folder: "_community/"
     create: true
     extension: "md"
     slug: "{{slug}}" # file name will be 'name'
-    preview_path: "team/{{slug}}"
+    preview_path: "community/{{slug}}"
     fields:
       - name: "display_name"
         label: "Display Name"
@@ -63,8 +63,8 @@ collections:
   - name: "Pages"
     label: "Pages"
     files:
-      - label: "Start"
-        name: "Start"
+      - label: "Concierge"
+        name: "Concierge"
         file: "_pages/concierge.md"
         fields:
           - name: body
@@ -140,16 +140,23 @@ collections:
           - name: body
             widget: markdown
             label: "Text content"
-      - label: "Synthetic Data"
-        name: "synthetic"
-        file: "_pages/docs/synthetic.md"
+      - label: "FlowEHR"
+        name: "flowehr"
+        file: "_pages/docs/flowehr.md"
         fields:
           - name: body
             widget: markdown
             label: "Text content"
-      - label: "FlowEHR"
-        name: "flowehr"
-        file: "_pages/docs/flowehr.md"
+      - label: "Anonymisation"
+        name: "anonymisation"
+        file: "_pages/docs/anonymisation.md"
+        fields:
+          - name: body
+            widget: markdown
+            label: "Text content"
+      - label: "Synthetic Data"
+        name: "synthetic"
+        file: "_pages/docs/synthetic.md"
         fields:
           - name: body
             widget: markdown
