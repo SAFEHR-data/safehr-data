@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/af9b2397-7510-4bbb-8cb6-ec2393f738ed/deploy-status)](https://app.netlify.com/sites/safehr-data/deploys)
 
-# SAFehr starter
+# SAFEHR starter
 
 A simple website to direct users to the SAFEHR resources.
 

@@ -7,7 +7,7 @@ toc: true
 toc_sticky: true
 ---
 
-**SAF**ehr (pronounced simply as *safer*) is built on the principles of safety, anonymisation, and fairness.
+{{ site.safehr_logo }} (pronounced simply as *safer*) is built on the principles of safety, anonymisation, and fairness.
 
 We support health researchers at UCL and UCLH who wish to work with data from the Trust's Electronic Health Records (EHRs) including imaging, free text and other multi-modal data. We're a partnership between [UCL](https://www.ucl.ac.uk) and [UCLH](https://www.uclh.nhs.uk) supported and funded by the [UCLH Biomedical Research Centre](https://www.uclhospitals.brc.nihr.ac.uk).
 

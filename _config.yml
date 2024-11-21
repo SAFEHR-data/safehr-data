@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: SAFehr data
+title: "SAF<span class='primary-color'>EHR</span> data"
+safehr_logo: 'SAF<span class="primary-color">EHR</span>'
 email: uclh.criu@nhs.net # TODO: update an safehr email email
 description: >- # this means to ignore newlines until "baseurl:"
-  Secure or Anonymised Framework for Electronic Health Records (SAFehr-data)
+  SAFE ANONYMISED FAIR Electronic Health Record (SAFEHR)
   is a collaboration between University College Hospital London and
   University College London to support the use of health data for research
   and clinical practice.
@@ -75,9 +76,9 @@ plugins:
 
 # Default author unless specified in data/authors.yml
 author:
-  name: "SAFehr data team"
+  name: "SAFEHR data team"
   avatar: "/assets/images/safehr-susan.jpg"
-  bio: "SAFehr data - a UCL/H BRC health data collaboration supporting research and clinical practice"
+  bio: "SAFEHR data - a UCL/H BRC health data collaboration supporting research and clinical practice"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
