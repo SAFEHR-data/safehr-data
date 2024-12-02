@@ -1,12 +1,12 @@
 ---
-title: Nagogastric feeding tube misplacement
+title: Nasogastric feeding tube misplacement
 excerpt: Medical imaging to detect misplaced NG tubes
 accordion: true
 classes: wide
 layout: archive
 header:
   overlay_image: /data-cards/2024/ng-tubes/assets/cxr.jpg
-  overlay_filter: rgba(26, 62, 114, 0.7)
+  overlay_filter: rgba(26, 62, 114, 0.4)
 ---
 
 {: .accordion-header}

@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-Please browse examples of our existing data assets.
+Please browse [synthetic](/docs/synthetic) examples of our existing data assets.

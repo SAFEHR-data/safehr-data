@@ -15,7 +15,7 @@ DAP-R Express is an expedited branch of DAP-R for more straightforward and stand
 
 To determine whether your research proposal is eligible for either the DAP-R or DAP-R Express process, refer to the criteria below. For more information, please click here and contact the team if you believe you are eligible.
 
-![](/assets/uploads/dap-r-express-process-cropped.png "DAP-R overview")
+![](/assets/uploads/dap-r-express-process.png "DAP-R overview")
 
 ## Fast track
 
