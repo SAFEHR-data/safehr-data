@@ -3,22 +3,27 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+# NB: title_override field is used to force a different title into the browser
+# tab because the complex markdown doesn't display nicely
+
 title: "**SAFE** \\|  **ANONYMISED** \\| **FAIR**"
+title_override: "Welcome to SAFEHR data"
+
 layout: home
 header:
     overlay_image: /assets/images/analytics-brc-banner.jpg
     actions:
         - label: "Start here"
-          url: "pages/concierge"
+          url: "/docs/start"
 excerpt: 'SAF<span class="primary-color">EHR</span> supports the governance, technology and **data** needs of health-data researchers at UCL and UCLH'
 feature_row:
-    - url: "pages/docs/dap-research"
+    - url: "docs/dap-research"
       btn_label: "Request data access"
       btn_class: "btn--primary btn--block"
     - url: "pages/explore"
       btn_label: "Explore our data"
       btn_class: "btn--primary btn--block"
-    - url: "pages/collaborate"
+    - url: "/docs/start"
       btn_label: "Collaborate with us"
       btn_class: "btn--primary btn--block"
 under_construction: false
