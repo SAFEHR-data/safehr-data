@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Fix issue with nokogiri gem
-ruby "3.3.5"  # Use a newer Ruby version
+ruby "3.3.6"  # Use a newer Ruby version
 
 gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
