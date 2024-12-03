@@ -1,5 +1,3 @@
-Note a Glossary of terms used is provided as a separate document.
-
 ## Introduction
 
 Data and metadata are an integral part of any Hospital Trust’s electronic information systems. In hospital systems, data is

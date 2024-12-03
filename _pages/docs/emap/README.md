@@ -2,7 +2,7 @@
 
 This is a work in progress.
 
-## Table of Content
+## Table of Contents
 
 ### [Glossary](Glossary.md)
 
@@ -20,7 +20,7 @@ This is a work in progress.
 * [Types of validation](Data_and_validation/validation.md)
 * [Data used in validation report](Data_and_validation/data_used_by_validation.md)
 * [Issues encountered in validation report](Data_and_validation/validation_issues.md)
-  
+
 ### Data Dictionary
 
 * [Star data](data_dictionary/star_data.md)
@@ -36,6 +36,5 @@ This is a work in progress.
 * [Technical overview of current EMAP](technical_overview/Technical_overview_of_EMAP.md)
 
     Technologies used in more detail
-    
-    * [RabbitMQ](technical_overview/technologies_used/RabbitMQ.md)
 
+    * [RabbitMQ](technical_overview/technologies_used/RabbitMQ.md)

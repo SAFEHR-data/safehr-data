@@ -10,7 +10,7 @@ main:
     url: /posts/
   - title: "Community"
     url: /community/
-    # - title: "Admin"
+  # - title: "Admin"
   #   url: /admin/
   #   target: "_blank"
 

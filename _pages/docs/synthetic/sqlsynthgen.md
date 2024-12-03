@@ -6,7 +6,7 @@ title: "SQLSynthGen"
 
 *SQLSYNTHGEN* (SSG), a portmanteau of 'SQL Synthetic Generator', is a [software tool](https://github.com/alan-turing-institute/sqlsynthgen) designed by a team ([May Yong](https://www.turing.ac.uk/people/researchers/may-yong), [Ian Stenson](https://www.turing.ac.uk/people/research-engineering/iain-stenson), and [Markus Hauru](https://www.turing.ac.uk/people/researchers/markus-hauru)) working under Professor [Carsten Maple](https://www.turing.ac.uk/people/researchers/carsten-maple) at the Alan Turing Institute.
 
-SSG creates synthetic replicas of relational (SQL) databases. By default, whilst it reliably replicates the *structure* of the database, it will only populate that structure with random data using another tool called [Mimesis](https://mimesis.name/en/master/index.html).
+SSG creates synthetic replicas of relational (SQL) databases. By default, whilst it reliably replicates the *structure* of the database, it will only populate that structure with random data using another tool called [Mimesis](https://mimesis.name/master).
 
 > Fake data refers to data that is not useful or sensitive, but is used to occupy a space where real data is typically located.
 
