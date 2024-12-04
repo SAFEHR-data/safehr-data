@@ -16,7 +16,7 @@ If you're interested in learning more, then please drop by the Institute of Heal
 <!-- Switch to Mermaid Gantt? -->
 ## Roadmap 2024
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 %%{init: {
   "theme": "neutral",
   "themeVariables": {
@@ -40,7 +40,7 @@ timeline
 
 ## Roadmap 2025
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 %%{init: {
       "theme": "neutral",
       "themeVariables": {
