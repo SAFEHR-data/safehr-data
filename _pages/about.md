@@ -60,7 +60,3 @@ timeline
     Q3                  : Digital pathology
     Q4                  : ...
 </div>
-
-## The Launch of SAFEHR: 
-
-<iframe src="https://uclh.slab.com/embed/safehr-launch-presentation-4th-december-2024-lfwcwtp8?shr=q3UOjuVXCf-RgDi_uhsf2Ot5" frameborder="0" onmousewheel="" width="100%" height="660" style="background: transparent; border: 1px solid #ccc;"></iframe>
