@@ -6,7 +6,6 @@ classes: wide
 toc: true
 toc_sticky: true
 ---
-
 {{ site.safehr_logo }} (pronounced simply as *safer*) is built on the principles of safety, anonymisation, and fairness.
 
 We support health researchers at UCL and UCLH who wish to work with data from the Trust's Electronic Health Records (EHRs) including imaging, free text and other multi-modal data. We're a partnership between [UCL](https://www.ucl.ac.uk) and [UCLH](https://www.uclh.nhs.uk) supported and funded by the [UCLH Biomedical Research Centre](https://www.uclhospitals.brc.nihr.ac.uk).
@@ -14,6 +13,7 @@ We support health researchers at UCL and UCLH who wish to work with data from th
 If you're interested in learning more, then please drop by the Institute of Health Informatics (IHI) at 222 Euston Road, or drop us an [email](mailto:uclh.safehr@nhs.net).
 
 <!-- Switch to Mermaid Gantt? -->
+
 ## Roadmap 2024
 
 <div class="mermaid" markdown="0">
@@ -60,3 +60,7 @@ timeline
     Q3                  : Digital pathology
     Q4                  : ...
 </div>
+
+## The Launch of SAFEHR: 
+
+<iframe src="https://uclh.slab.com/embed/safehr-launch-presentation-4th-december-2024-lfwcwtp8?shr=q3UOjuVXCf-RgDi_uhsf2Ot5" frameborder="0" onmousewheel="" width="100%" height="660" style="background: transparent; border: 1px solid #ccc;"></iframe>
