@@ -5,7 +5,61 @@
 /*
    Typography
    ========================================================================== */
+@font-face {
+    font-family: "B612";
+    src: url("/assets/fonts/B612/B612-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "B612";
+    src: url("/assets/fonts/B612/B612-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "B612";
+    src: url("/assets/fonts/B612/B612-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "B612";
+    src: url("/assets/fonts/B612/B612-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "B612 mono";
+    src: url("/assets/fonts/B612/B612Mono-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "B612 mono";
+    src: url("/assets/fonts/B612/B612Mono-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "B612 mono";
+    src: url("/assets/fonts/B612/B612Mono-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "B612 mono";
+    src: url("/assets/fonts/B612/B612Mono-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
 $doc-font-size: 16 !default;
 
 /* paragraph indention */
